@@ -1,0 +1,45 @@
+// -------------------------------------
+//   Colors
+// -------------------------------------
+//lighter<light<nomal<dark<darker
+//灰
+$gray-color: #f1f1f1;
+$gray-color-1: #ececf3;
+$gray-color-2: #ebebeb;
+$gray-color-3: #fbfbfb;
+$dark-gray-color: #979797;
+$darker-gray-color: #555555;
+//黑
+$light-black-color: #999999;
+$black-color: #4A4A4A;
+$dark-black-color: #343434;
+$darker-black-color: #000000;
+//紅
+$light-red-color: #f7cbd1;
+$red-color: #e24e5f;
+//粉紅
+$pink-color: #fb2653;
+$dark-pink-color: #dc2086;
+//白
+$dark-white-color: #ebebeb;
+//咖啡
+$light-brown-color: #968b81;
+//藍
+$light-blue-color: #37c2d1;
+//紫
+$light-purple-color: #9d6397;
+
+//-----
+//header
+$menu-icon-color: $light-black-color;
+$menu-discount-color: $red-color;
+$top-nav-color: $dark-black-color;
+$top-sub-nav-color: $darker-gray-color;
+$search-bg-color: $dark-gray-color;
+//footer
+$footer-bg-color: $gray-color;
+$footer-hr-color: $light-black-color;
+$footer-go-top-color: $dark-gray-color;
+//button
+$button-color: $gray-color;
+$button-secondary-color: $darker-black-color;

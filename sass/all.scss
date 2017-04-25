@@ -1,0 +1,31 @@
+// *************************************
+//
+//   Project Name
+//   -> New Store
+//
+// *************************************
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+//@import "vendor/icomoon"; //可放icon-font
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+@import "normalize"; //normalize.css (good for HTML5)
+@import "mixin"; //所有Mixin
+@import "extend"; //拿來合併樣式，都放@extend用的檔案
+// -------------------------------------
+//   Core
+// -------------------------------------
+@import "core/colors"; //定義顏色
+@import "core/typography"; //定義字型
+@import "core/button"; //定義按鈕
+@import "core/module"; //共用的模組,ex:form,table,crumbs,font-awesome
+@import "core/layout"; //共同框架ex:header,footer
+// -------------------------------------
+//   Page
+// -------------------------------------
+@import "page/index"; //首頁
+//@import "page/xxx";  //各單元CSS
+@import "partials/media"; //responsive (佔放可以用@content達到rwd效果)
+//@import "partials/visibility"; //visibility (佔放)

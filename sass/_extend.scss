@@ -1,0 +1,77 @@
+// -------------------------------------
+//   Extend
+// -------------------------------------
+
+// @extend %clearfix;
+%clearfix {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  zoom: 1
+}
+// @extend %remove-style;
+%remove-style {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+// @extend %hover-transition;
+%hover-transition {
+  transition: all .3s;
+}
+
+// @extend %store-main-content-wrap;
+%store-main-content-wrap {
+  float: left;
+  width: $main-right-width;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+// @extend %store-nomal-font;
+%store-nomal-font {
+  color: #555555;
+  line-height: 1.8;
+}
+
+// @extend %lines-1;
+%lines-1 {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 1;
+  -moz-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// @extend %lines-2;
+%lines-2 {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 2;
+  -moz-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+

@@ -1,0 +1,102 @@
+// -------------------------------------
+//   Layout
+// -------------------------------------
+* {
+  box-sizing: border-box;
+  
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+  margin: 0;
+  // margin-bottom: 5px;
+}
+svg {
+	path, line, circle, polyline, rect, ellipse {
+		stroke: $menu-icon-color;
+	}
+}
+figure {
+	@extend %remove-style;
+}
+hr {
+	border: 0;
+	height: 1px;
+}
+ul, ol {
+	padding-left: 20px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 35px;
+  line-height: 35px;
+  padding: 0px 40px 0px 10px;
+	border: 1px solid $dark-gray-color;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  &:focus {
+		outline: none;
+	}
+	option {
+	  border-radius: 0;
+	  line-height: normal;
+	  padding: 5px 10px;
+	  border: 1px solid $dark-gray-color;
+	  height: 32px;
+	}
+}
+select::-ms-expand {
+   display: none;
+}
+input[type=text] {
+	height: 40px;
+  line-height: 40px;
+  padding: 0px 15px;
+	border: 1px solid $dark-gray-color;
+	&:focus {
+		border: 1px solid #8a8a8a;
+    background-color: #fefefe;
+    outline: none;
+    -webkit-box-shadow: 0 0 5px #cacaca;
+    box-shadow: 0 0 5px #cacaca;
+    -webkit-transition: -webkit-box-shadow 0.5s, border-color 0.25s ease-in-out;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+	}
+}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    @include font-size(13px);
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    @include font-size(13px);
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    @include font-size(13px);
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    @include font-size(13px);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-container {
+	@extend %clearfix;
+	@include margin-center;
+	width: $main-width;
+}
+.table {
+	display: table;
+  height: 100%;
+  width: 100%;
+}
+.table-cell {
+	display: table-cell;
+}
+

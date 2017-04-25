@@ -1,0 +1,53 @@
+// -------------------------------------
+//   Button
+// -------------------------------------
+.button {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.625em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  background-color: $button-color;
+  color: $darker-gray-color;
+  &:hover {
+  	background-color: darken($button-color, 10);
+  }
+  &:focus {
+  	outline: none;
+  }
+  &.expanded {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+	}
+	&.tiny {
+    font-size: 0.6rem;
+	}
+	&.small {
+    font-size: 0.75rem;
+	}
+	&.large {
+    font-size: 1.25rem;
+	}
+	&.secondary {
+    background-color: $button-secondary-color;
+    color: white;
+	}
+}
+.button-group {
+	@extend %clearfix;
+	&.expanded {
+		.button {
+			display: inline-block;
+		}
+	}
+}
