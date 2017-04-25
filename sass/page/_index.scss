@@ -359,6 +359,7 @@ footer {
 	padding: 20px;
 }
 .go-top {
+	display: none;
 	border-radius: 50%;
 	position: fixed;
 	right: 30px;
@@ -370,7 +371,7 @@ footer {
 	opacity: .9;
 	text-align: center;
 	line-height: 44px;
-  font-size: 20px;
+    font-size: 20px;
 	color: $light-blue-color;
 	&:hover {
 		cursor: pointer;
