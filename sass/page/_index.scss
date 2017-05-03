@@ -26,12 +26,32 @@ header {
 }
 .my-logo {
 	@include margin-center;
+	border-radius: 50%;
 	display: block;
 	width: 115px;
 	height: 115px;
 	background-image: url(../images/logo/myself.png);
 	background-size: 115px;
 	margin-bottom: 5px;
+	&:hover {
+		background-color: rgba(255, 255, 255, .5);
+		content: "";
+		display: block;
+		width: 115px;
+		height: 115px;
+		background-image: url(../images/logo/mylogo@2x.png);
+		background-size: 71px 67px;
+		background-repeat: no-repeat;
+		background-position: center;
+		// &:before {
+		// 	content: "";
+		// 	display: block;
+		// 	width: 71px;
+		// 	height: 67px;
+		// 	background-image: url(../images/logo/mylogo@2x.png);
+		// 	background-size: 71px 67px;
+		// }
+	}
 }
 .my-name {
 	margin-bottom: 5px;
@@ -52,7 +72,8 @@ header {
 		width: 18px;
 		height: 13px;
 		margin-bottom: 5px;
-		background-image: url(../images/icon/mail.png);
+		background-image: url(../images/icon/mail@2x.png);
+		background-size: 18px 13px;
 	}
 }
 
@@ -111,6 +132,7 @@ nav {
 	// margin-bottom: 50px;
 	p {
 		// font-size: 14px;
+		color: $gray-color-4;
 		margin: 0;
 		background-color: white;
 		border: 1px solid $gray-color-1;
@@ -133,17 +155,47 @@ nav {
 	background-color: white;
 	border: 1px solid $gray-color-1;
 	border-radius: 3px;
+	color: $gray-color-4;
 }
 .experience-block {
 	display: -webkit-flex;
 	border-bottom: 1px solid $gray-color-1;
 	padding: 30px;
 	&__date {
-		width: 100px;
+		width: 160px;
+    	padding-left: 40px;
+		&.work {
+			position: relative;
+			&:before {
+				position: absolute;
+				top: -3px;
+    			left: 5px;
+				content: "";
+				display: block;
+				width: 21px;
+				height: 19px;
+				background-image: url(../images/icon/work@2x.png);
+				background-size: 21px 19px;
+			}
+		}
+		&.school {
+			position: relative;
+			&:before {
+				position: absolute;
+				top: -1px;
+    			left: 5px;
+				content: "";
+				display: block;
+				width: 23px;
+				height: 16px;
+				background-image: url(../images/icon/school@2x.png);
+				background-size: 23px 16px;
+			}
+		}
 	}
 	&__name {
 		position: relative;
-		width: 200px;
+		width: 175px;
 		padding-left: 50px;
 		span {
 			display: block;
@@ -212,94 +264,114 @@ nav {
     	}
 	}
 	//gg
-	.g-01{
+	.g-01 {
 		background-image: url(../images/pic/gg-store.png);
 	}
-	.g-02{
+	.g-02 {
 		background-image: url(../images/pic/gg-chat.png);
 	}
-	.g-03{
+	.g-03 {
 		background-image: url(../images/pic/gg-cuemee-web.png);
 	}
-	.g-04{
+	.g-04 {
 		background-image: url(../images/pic/gg-cuemee.png);
 	}
-	.g-05{
+	.g-05 {
 		background-image: url(../images/pic/gg-cuemee-placeholder.png);
 	}
-	.g-06{
+	.g-06 {
 		background-image: url(../images/pic/gg-cuemee-logo.jpg);
 	}
-	.g-07{
+	.g-07 {
 		background-image: url(../images/pic/gg-sticker-01.png);
 	}
-	.g-08{
+	.g-08 {
 		background-image: url(../images/pic/gg-sticker-02.png);
 	}
-	.g-09{
+	.g-09 {
 		background-image: url(../images/pic/gg-sticker-03.png);
 	}
-	.g-10{
+	.g-10 {
 		background-image: url(../images/pic/gg-sticker-04.png);
 	}
-	.g-11{
+	.g-11 {
 		background-image: url(../images/pic/gg-sticker-05.png);
 	}
-	.g-12{
+	.g-12 {
 		background-image: url(../images/pic/gg-sticker-06.png);
 	}
-	.g-13{
+	.g-13 {
 		background-image: url(../images/pic/gg-sticker-07.png);
 	}
-	.g-14{
+	.g-14 {
 		background-image: url(../images/pic/gg-sticker-08.png);
 	}
-	.g-15{
+	.g-15 {
 		background-image: url(../images/pic/gg-sticker-09.png);
 	}
-	.g-16{
+	.g-16 {
 		background-image: url(../images/pic/gg-sticker-10.png);
 	}
-	.g-17{
+	.g-17 {
 		background-image: url(../images/pic/gg-sticker-11.png);
 	}
-	.g-18{
+	.g-18 {
 		background-image: url(../images/pic/gg-sticker-12.png);
 	}
-	.g-19{
+	.g-19 {
 		background-image: url(../images/pic/gg-sticker-13.png);
 	}
 	//begonia
-	.b-01{
+	.b-01 {
 		background-image: url(../images/pic/begonia-endless.png);
 	}
-	.b-02{
+	.b-02 {
 		background-image: url(../images/pic/begonia-dm1.png);
 	}
-	.b-03{
+	.b-03 {
 		background-image: url(../images/pic/begonia.png);
 	}
-	.b-04{
+	.b-04 {
 		background-image: url(../images/pic/begonia-banner.png);
 		background-position: center;
 	}
-	.b-05{
+	.b-05 {
 		background-image: url(../images/pic/begonia-edm1.jpg);
 	}
-	.b-06{
+	.b-06 {
 		background-image: url(../images/pic/begonia-edm2.jpg);
 	}
-	.b-07{
+	.b-07 {
 		background-image: url(../images/pic/begonia-ijysheng.png);
 	}
-	.b-08{
+	.b-08 {
 		background-image: url(../images/pic/begonia-nhk.png);
 	}
-	.b-09{
+	.b-09 {
 		background-image: url(../images/pic/begonia-web1.png);
 	}
-	.b-10{
+	.b-10 {
 		background-image: url(../images/pic/begonia-myleage.png);
+	}
+	//ntpc
+	.n-01 {
+		background-image: url(../images/pic/ntpc-mobileweb.png);
+	}
+	.n-02 {
+		background-image: url(../images/pic/ntpc-epaper.png);
+	}
+	.n-03 {
+		background-image: url(../images/pic/ntpc-healthy.png);
+	}
+	.n-04 {
+		background-image: url(../images/pic/ntpc.png);
+	}
+	//ting
+	.t-01 {
+		background-image: url(../images/pic/ting-icon.png);
+	}
+	.t-02 {
+		background-image: url(../images/pic/tranz-dm-wine.png);
 	}
 	.controls {
 		text-align: center;
@@ -346,6 +418,7 @@ nav {
 	&__list {
 		@extend %remove-style;
 		text-align: center;
+		color: $gray-color-4;
 		li {
 			margin-bottom: 5px;
 		}

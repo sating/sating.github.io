@@ -52,6 +52,12 @@
 		display: inline-block;
 		width: 65px;
 		height: 30px;
+		padding-left: 0;
+		&.work, &.school {
+			&:before {
+				display: none;
+			}
+		}		
 	}
 	.experience-block__list {
 		width: 100%;
