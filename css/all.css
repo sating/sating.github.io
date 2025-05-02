@@ -934,7 +934,7 @@ nav ul li a:hover {
   background-color: white;
   border: 1px solid #ececf3;
   border-radius: 3px;
-  height: 250px;
+  min-height: 215px;
 }
 .ability-block + .ability-block {
   margin-left: 20px;
@@ -1054,14 +1054,7 @@ footer {
     line-height: 29px;
   }
 }
-@media screen and (max-width: 414px) {
-  .about-warp, .portfolio-warp, .ability-warp, .experience-warp {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  nav ul li {
-    width: 50%;
-  }
+@media screen and (max-width: 550px) {
   .ability-block {
     float: none;
     width: 100%;
@@ -1069,5 +1062,17 @@ footer {
   .ability-block + .ability-block {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .about-warp,
+  .portfolio-warp,
+  .ability-warp,
+  .experience-warp {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav ul li {
+    width: 50%;
   }
 }/*# sourceMappingURL=all.css.map */

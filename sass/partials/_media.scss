@@ -2,97 +2,114 @@
 //   Media
 // -------------------------------------
 @media screen and (max-width: 760px) {
-	.flex-warp {
-		display: block;
-		min-width: 320px;
-	}
-	header {
-		position: static;
-		width: 100%;
-		height: auto;
-	}
-	.main-container {
-		margin-left: 0;
-		width: 100%;
-	}
-	nav {
-		overflow: hidden;
-		padding: 5px;
-		border-bottom: 1px solid $gray-color-1;
-		ul {
-			li {
-				float: left;
-				width: 25%;
-				text-align: center;
-				a {
-					&:after {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-	.nav {
-		display: none;
-	}
-	.nav-m {
-		display: block;
-	}
-	.experience-block {
-		display: block;
-	}
-	.experience-block__name {
-		display: inline-block;
-		span {
-			display: inline-block;
-			margin-left: 5px;
-		}
-	}
-	.experience-block__date {
-		display: inline-block;
-		width: 65px;
-		height: 30px;
-		padding-left: 0;
-		&.work, &.school {
-			&:before {
-				display: none;
-			}
-		}		
-	}
-	.experience-block__list {
-		width: 100%;
-		margin-top: 30px;
-	}
-	footer {
-		padding: 0 0 40px;
-	}
-	.go-top {
-		margin-right: -25px;
-		right: 50%;
-		bottom: -25px;
-		line-height: 29px;
-	}
+  .flex-warp {
+    display: block;
+    min-width: 320px;
+  }
+  header {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+  nav {
+    overflow: hidden;
+    padding: 5px;
+    border-bottom: 1px solid $gray-color-1;
+    ul {
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .nav {
+    display: none;
+  }
+  .nav-m {
+    display: block;
+  }
+  .experience-block {
+    display: block;
+  }
+  .experience-block__name {
+    display: inline-block;
+    span {
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+  .experience-block__date {
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    padding-left: 0;
+    &.work,
+    &.school {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .experience-block__list {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer {
+    padding: 0 0 40px;
+  }
+  .go-top {
+    margin-right: -25px;
+    right: 50%;
+    bottom: -25px;
+    line-height: 29px;
+  }
+}
+@media screen and (max-width: 550px) {
+  //   .ability-block__title {
+  //     font-size: 14px;
+  //     word-break: break-all;
+  //   }
+  .ability-block {
+    float: none;
+    width: 100%;
+    & + .ability-block {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 414px) {
-	.about-warp, .portfolio-warp, .ability-warp, .experience-warp {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	nav {
-		ul {
-			li {
-				width: 50%;
-			}
-		}
-	}
-	.ability-block {
-		float: none;
-		width: 100%;
-		& + .ability-block {
-			margin-left: 0;
-			margin-top: 10px;
-		}
-	}
+  .about-warp,
+  .portfolio-warp,
+  .ability-warp,
+  .experience-warp {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  nav {
+    ul {
+      li {
+        width: 50%;
+      }
+    }
+  }
+  //   .ability-block {
+  //     float: none;
+  //     width: 100%;
+  //     & + .ability-block {
+  //       margin-left: 0;
+  //       margin-top: 10px;
+  //     }
+  //   }
 }
-

@@ -399,7 +399,7 @@ nav {
   background-color: white;
   border: 1px solid $gray-color-1;
   border-radius: 3px;
-  height: 250px;
+  min-height: 215px;
   & + .ability-block {
     margin-left: 20px;
   }
